@@ -17,6 +17,8 @@ public class Main {
         userService.saveUser("Леша", "Зотов", (byte) 33);
         userService.saveUser("Валера", "Гусев", (byte) 44);
 
+        userService.removeUserById(2);
+
         List<User> strings = userService.getAllUsers();
         for (User s : strings) {
             System.out.println(s);
